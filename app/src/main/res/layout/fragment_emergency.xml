@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:padding="16dp"
+    tools:context=".EmergencyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/dosisbold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Emergency"
+                android:textSize="40dp"
+                android:textColor="@color/lightgreen"  />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/EmergencyRecyclerView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/dosisbold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urgency Meter"
+            android:textSize="40dp"
+            android:textColor="@color/lightgreen"  />
+
+        <TableLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:layout_above="@+id/seekBar"
+            android:layout_alignStart="@+id/seekBar">
+
+            <TableRow
+                android:id="@+id/statusRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginEnd="30dp"
+                    android:layout_gravity=""
+                    android:id="@+id/seekBar_low"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/alataregular"
+                    android:text="LOW"/>
+                <TextView
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="70dp"
+                    android:id="@+id/seekBar_moderate"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/alataregular"
+                    android:text="MODERATE"/>
+                <TextView
+
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/seekBar_high"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_column="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/alataregular"
+                    android:text="HIGH"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="2"
+            android:progress="0"
+            android:paddingTop="30dp"
+            android:backgroundTint="@color/black"
+            android:thumbTint="@color/lightgreen"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:buttonTint="@color/lightgreen"
+                android:fontFamily="@font/alataregular"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/checkboxfornearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Nearby Users" />
+
+            <CheckBox
+                android:buttonTint="@color/lightgreen"
+                android:fontFamily="@font/alataregular"
+                android:layout_marginStart="20dp"
+                android:id="@+id/checkboxforfnf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Friends &amp; Family " />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:background="@drawable/layout_bg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dosisbold"
+        android:text="Service Providers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:id="@+id/serviceproviderlist"
+/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/cancelbtn"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

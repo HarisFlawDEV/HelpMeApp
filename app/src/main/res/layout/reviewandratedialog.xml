@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@drawable/layout_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="300dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/dosisbold"
+        android:text="Review &amp; Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editreview"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:hint="Feel free to write any Review"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RatingBar
+        android:progressTint="#FFFF00"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/ratingBarStyle"
+        android:numStars="5"
+        android:stepSize="0.1"
+        android:isIndicator="false" />
+
+    <Button
+        android:id="@+id/reportbtn"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/baseline_report_white_36"
+        android:text="Report"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/okbtnrr"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:text="Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginStart="20dp"
+            android:id="@+id/cancelbtnrr"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

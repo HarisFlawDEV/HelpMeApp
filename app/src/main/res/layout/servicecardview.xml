@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/serviceitem"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_rowWeight="1"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="12dp"
+    android:layout_margin="12dp">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/serviceid"
+            android:src="@drawable/outline_account_circle_white_48dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/serviceid"
+            android:id="@+id/servicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calender"
+            android:textSize="20sp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratregular"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

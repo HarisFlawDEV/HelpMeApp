@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/bloodAplus"
+        android:title="A+" />
+
+    <item android:id="@+id/bloodBplus"
+        android:title="B+" />
+
+    <item android:id="@+id/bloodOplus"
+        android:title="O+" />
+
+    <item android:id="@+id/bloodOminus"
+        android:title="O-" />
+
+    <item android:id="@+id/bloodAminus"
+        android:title="A-" />
+
+    <item android:id="@+id/bloodBminus"
+        android:title="B-" />
+
+    <item android:id="@+id/bloodABplus"
+        android:title="AB+" />
+
+    <item android:id="@+id/bloodABminus"
+        android:title="AB-" />
+
+</menu>

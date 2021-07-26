@@ -1,0 +1,81 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:id="@+id/dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:fontFamily="@font/epilogueregular"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:layout_marginTop="90dp"/>
+
+        <TextView
+            android:id="@+id/dialog_helptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/epilogueregular"
+            android:textSize="18sp"
+            android:text="Help Type"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/dialog_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/epilogueregular"
+            android:textSize="18sp"
+            android:text="Help Status"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/dialog_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/epilogueregular"
+            android:textSize="18sp"
+            android:background="@color/lightgreen"
+            android:text="Phone Number"
+            android:textAllCaps="false"
+            android:drawablePadding="10dp"
+            android:layout_marginEnd="10dp"
+            android:drawableStart="@drawable/phone_icon"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="70dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/dialog_location"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/round_room_white_48"/>
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/outline_account_circle_white_48dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

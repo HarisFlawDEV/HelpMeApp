@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_map"
+        android:title="Home"
+        android:icon="@drawable/outline_map_white_48"/>
+
+    <item android:id="@+id/menu_services"
+        android:title="Services"
+        android:icon="@drawable/outline_category_white_48dp"/>
+
+    <item android:id="@+id/placeholder"
+        android:title=""
+        android:enabled="false"
+        />
+
+    <item android:id="@+id/menu_notif"
+        android:title="Notification"
+        android:icon="@drawable/outline_notifications_white_48dp"/>
+
+
+    <item android:id="@+id/menu_acc"
+        android:title="Profile"
+        android:icon="@drawable/outline_account_circle_white_48dp"/>
+
+
+</menu>

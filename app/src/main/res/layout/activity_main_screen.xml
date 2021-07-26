@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity"
+    android:theme="@style/Materialtheme">
+
+<!--
+    <fragment
+        android:id="@+id/map"
+        android:name="com.unique.helpforce.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="729dp"
+        tools:context=".MainScreenActivity" />
+-->
+    <FrameLayout
+        android:id="@+id/container"
+    android:layout_width="match_parent"
+        android:layout_height="740dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/lightgreen"
+        android:id="@+id/bottomAppBar"
+        app:fabCradleMargin="20dp"
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:fabCradleVerticalOffset="10dp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomNavigationView"
+        app:menu="@menu/bottom_nav_menu"
+        android:layout_marginEnd="10dp"
+        app:itemMaxLines="2"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+         android:background="@android:color/transparent"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        app:layout_anchor="@id/bottomAppBar"
+        android:contentDescription="TODO" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
